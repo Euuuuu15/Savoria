@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About and Help - Savoria</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo"><span>Savoria</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav aria-label="Main" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="index.html#todays-picks">Today’s Picks</a></li>
+        <li><a href="about.html" aria-current="page">About/Help</a></li>
+      </ul>
+    </nav>
+    <a href="find-recipes.html" class="button">Find Recipes</a>
+  </header>
+
+  <main id="main">
+    <h1>About Savoria</h1>
+    <p>Savoria helps students and boarding house residents decide what to cook using the ingredients they already have.</p>
+
+    <section aria-labelledby="how-title">
+      <h2 id="how-title">How to use Savoria</h2>
+      <ol>
+        <li>Go to Find Recipes and tick the ingredients you have.</li>
+        <li>Press Find Recipes to see matching meals.</li>
+        <li>Open a recipe to see its steps and what you still need.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="match-title">
+      <h2 id="match-title">How matching works</h2>
+      <p>Savoria compares your ingredients with each recipe’s ingredient list and ranks recipes by how many you already have. Salt, pepper, cooking oil, and water are assumed. Savoria uses predefined recipes and simple matching, not AI.</p>
+    </section>
+
+    <section aria-labelledby="est-title">
+      <h2 id="est-title">About estimates</h2>
+      <p>Nutrition values are estimates for general guidance. They are not medical advice.</p>
+    </section>
+
+    <section aria-labelledby="fb-title">
+      <h2 id="fb-title">Send feedback</h2>
+      <p>This form is a prototype and does not send messages yet. Email and message are required.</p>
+      <form action="#" method="post">
+        <p><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name"></p>
+        <p><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required></p>
+        <p><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></p>
+        <p><button type="submit">Send feedback</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <p>Nutrition information on Savoria is an estimate and is not medical advice.</p>
+    <p>&copy; 2026 Savoria</p>
+  </footer>
+  <script type="module" src="js/nav.js"></script>
+</body>
+</html>

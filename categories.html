@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categories - Savoria</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo"><span>Savoria</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav aria-label="Main" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html" aria-current="page">Categories</a></li>
+        <li><a href="index.html#todays-picks">Today’s Picks</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <a href="find-recipes.html" class="button">Find Recipes</a>
+  </header>
+
+  <main id="main">
+    <h1>Categories</h1>
+    <p>Pick a category to see its recipes.</p>
+
+    <section aria-labelledby="all-cat-title">
+      <h2 id="all-cat-title">All categories</h2>
+      <article><h3><a href="results.html?category=breakfast">Breakfast</a></h3><p>Recipes for morning meals.</p></article>
+      <article><h3><a href="results.html?category=lunch">Lunch</a></h3><p>Practical midday meals.</p></article>
+      <article><h3><a href="results.html?category=dinner">Dinner</a></h3><p>Meals suitable for the evening.</p></article>
+      <article><h3><a href="results.html?category=snacks">Snacks</a></h3><p>Simple snacks and light meals.</p></article>
+      <article><h3><a href="results.html?category=quick-easy">Quick &amp; Easy</a></h3><p>Recipes requiring relatively little time.</p></article>
+      <article><h3><a href="results.html?category=budget-friendly">Budget-Friendly</a></h3><p>Recipes built around common ingredients and minimal extra purchases.</p></article>
+      <article><h3><a href="results.html?category=five-or-fewer">Five Ingredients or Fewer</a></h3><p>Recipes with short ingredient lists.</p></article>
+      <article><h3><a href="results.html?category=healthy">Healthy Meal Ideas</a></h3><p>Recipes with nutrition information and balanced meal suggestions.</p></article>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <p>Nutrition information on Savoria is an estimate and is not medical advice.</p>
+    <p>&copy; 2026 Savoria</p>
+  </footer>
+  <script type="module" src="js/nav.js"></script>
+</body>
+</html>

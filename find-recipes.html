@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find Recipes - Savoria</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo"><span>Savoria</span></a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav aria-label="Main" id="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html" aria-current="page">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="index.html#todays-picks">Today’s Picks</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <a href="find-recipes.html" class="button">Find Recipes</a>
+  </header>
+
+  <main id="main">
+    <h1>Find Recipes</h1>
+    <p>Tick the ingredients you have. Salt, pepper, cooking oil, and water are assumed, so you don’t need to select them.</p>
+
+    <form action="results.html" method="get">
+      <p>
+        <label for="search">Search ingredients</label>
+        <input type="search" id="search" autocomplete="off">
+      </p>
+
+      <!-- Short fallback list. find.js replaces it with the full list from ingredients.json -->
+      <div id="ingredient-groups">
+      <fieldset>
+        <legend>Protein</legend>
+        <ul>
+          <li><label><input type="checkbox" name="ingredient" value="chicken"> Chicken</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="eggs"> Eggs</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="canned-sardines"> Canned sardines</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="canned-tuna"> Canned tuna</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="firm-tofu"> Firm tofu</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="hotdogs"> Hotdogs</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Rice and noodles</legend>
+        <ul>
+          <li><label><input type="checkbox" name="ingredient" value="rice"> Rice (cooked)</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="pancit-canton"> Instant pancit canton</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Vegetables and aromatics</legend>
+        <ul>
+          <li><label><input type="checkbox" name="ingredient" value="garlic"> Garlic</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="onion"> Onion</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="tomatoes"> Tomatoes</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="potatoes"> Potatoes</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="cabbage"> Cabbage</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="carrots"> Carrots</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sauces</legend>
+        <ul>
+          <li><label><input type="checkbox" name="ingredient" value="soy-sauce"> Soy sauce</label></li>
+          <li><label><input type="checkbox" name="ingredient" value="fish-sauce"> Fish sauce</label></li>
+        </ul>
+      </fieldset>
+      </div>
+
+      <p>
+        <label for="other">Add another ingredient</label>
+        <input type="text" id="other" autocomplete="off">
+        <button type="button" id="add-other">Add</button>
+      </p>
+      <p id="status" aria-live="polite"></p>
+
+      <section aria-labelledby="selected-title">
+        <h2 id="selected-title">Selected ingredients</h2>
+        <!-- aria-live: a screen reader announces changes here once JavaScript fills it in (Phase 3) -->
+        <p id="selected" aria-live="polite">Nothing selected yet.</p>
+      </section>
+
+      <p>
+        <button type="submit">Find Recipes</button>
+        <button type="reset">Clear</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <p>Nutrition information on Savoria is an estimate and is not medical advice.</p>
+    <p>&copy; 2026 Savoria</p>
+  </footer>
+  <script type="module" src="js/nav.js"></script>
+  <script type="module" src="js/find.js"></script>
+</body>
+</html>

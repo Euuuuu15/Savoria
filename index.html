@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Savoria suggests simple, affordable meals from the ingredients you already have.">
+  <title>Savoria - Cook with what you have</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <a href="index.html" class="logo">
+      <!-- Logo icon goes here: <img src="images/logo-icon.svg" alt=""> (empty alt: the text "Savoria" already names the link) -->
+      <span>Savoria</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav aria-label="Main" id="main-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="index.html#todays-picks">Today’s Picks</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <a href="find-recipes.html" class="button">Find Recipes</a>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="hero-title">
+      <h1 id="hero-title">What’s in your kitchen?</h1>
+      <p>Choose the ingredients you already have and Savoria suggests simple meals you can cook right now.</p>
+      <ul aria-label="Savoria at a glance">
+        <li><strong>30</strong> recipes</li>
+        <li><strong>50</strong> ingredients</li>
+        <li><strong>8</strong> categories</li>
+      </ul>
+      <p><a href="find-recipes.html" class="button">Find Recipes</a> <a href="categories.html" class="button-secondary">Browse Categories</a></p>
+    </section>
+
+    <section aria-labelledby="problem-title">
+      <h2 id="problem-title">Sound familiar?</h2>
+      <ul>
+        <li>Buying ingredients you don’t really need</li>
+        <li>Letting food go to waste</li>
+        <li>Opening the fridge with no idea what to cook</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="value-title">
+      <h2 id="value-title">How Savoria helps</h2>
+      <article><h3>Uses what you have</h3><p>Start from your own ingredients, not a shopping list.</p></article>
+      <article><h3>Budget-friendly</h3><p>Meals built around common ingredients and short ingredient lists.</p></article>
+      <article><h3>Clear about what’s missing</h3><p>Every result shows exactly which ingredients you still need.</p></article>
+    </section>
+
+    <section id="todays-picks" aria-labelledby="picks-title">
+      <h2 id="picks-title">Today’s Picks</h2>
+      <article><h3>Breakfast</h3><p><a href="recipe.html?id=filipino-style-cheese-omelette">Filipino-Style Cheese Omelette</a></p><p>5–10 minutes</p></article>
+      <article><h3>Lunch</h3><p><a href="recipe.html?id=tofu-and-vegetable-stir-fry">Tofu and Vegetable Stir-Fry</a></p><p>15–20 minutes</p></article>
+      <article><h3>Dinner</h3><p><a href="recipe.html?id=chicken-curry">Chicken Curry</a></p><p>30–35 minutes</p></article>
+    </section>
+
+    <section aria-labelledby="quick-title">
+      <h2 id="quick-title">Quick and budget-friendly meals</h2>
+      <article><h3><a href="recipe.html?id=garlic-fried-rice-with-egg">Garlic Fried Rice with Egg</a></h3><p>About 10 minutes</p></article>
+      <article><h3><a href="recipe.html?id=fried-rice-with-hotdog">Fried Rice with Hotdog</a></h3><p>10–15 minutes</p></article>
+      <article><h3><a href="recipe.html?id=ginisang-kalabasa">Ginisang Kalabasa</a></h3><p>15–20 minutes</p></article>
+    </section>
+
+    <section aria-labelledby="cat-title">
+      <h2 id="cat-title">Browse by category</h2>
+      <ul>
+        <li><a href="results.html?category=breakfast">Breakfast</a></li>
+        <li><a href="results.html?category=lunch">Lunch</a></li>
+        <li><a href="results.html?category=dinner">Dinner</a></li>
+        <li><a href="results.html?category=snacks">Snacks</a></li>
+        <li><a href="results.html?category=quick-easy">Quick &amp; Easy</a></li>
+        <li><a href="results.html?category=budget-friendly">Budget-Friendly</a></li>
+        <li><a href="results.html?category=five-or-fewer">Five Ingredients or Fewer</a></li>
+        <li><a href="results.html?category=healthy">Healthy Meal Ideas</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="steps-title">
+      <h2 id="steps-title">How it works</h2>
+      <ol>
+        <li>Choose the ingredients you have.</li>
+        <li>See recipes ranked by how well they match.</li>
+        <li>Pick one and start cooking.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions</h2>
+      <details><summary>How does Savoria choose recipes?</summary><p>It compares your ingredients with each recipe’s ingredient list and ranks recipes by how many you already have. It uses predefined recipes and simple matching, not AI.</p></details>
+      <details><summary>Are the nutrition values exact?</summary><p>No. They are estimates for general guidance and are not medical advice.</p></details>
+      <details><summary>What if I’m missing an ingredient?</summary><p>Each result lists what’s missing, and some recipes suggest substitutions.</p></details>
+    </section>
+
+    <section aria-labelledby="cta-title">
+      <h2 id="cta-title">Ready to cook?</h2>
+      <p><a href="find-recipes.html" class="button">Find Recipes</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find-recipes.html">Find Recipes</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="about.html">About/Help</a></li>
+      </ul>
+    </nav>
+    <p>Nutrition information on Savoria is an estimate and is not medical advice.</p>
+    <p>&copy; 2026 Savoria</p>
+  </footer>
+  <script type="module" src="js/nav.js"></script>
+</body>
+</html>
